@@ -105,7 +105,7 @@ function validateRegistrationInput(fieldName, value) {
     }
 
     if (fieldName === 'Phone' && !/^\d{4}-\d{7}$/.test(trimmed)) {
-        return 'Phone must follow the format: 0300-1234567';
+        return 'Phone must follow the format 03XX-XXXXXXX.';
     }
 
     if (fieldName === 'Email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed)) {

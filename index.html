@@ -55,8 +55,8 @@
                 <span>Fresh Batches for PMA Long Course, PAF GDP & Navy Direct Short Service</span>
             </div>
             <div class="flex items-center space-x-6 text-slate-300">
-                <a href="tel:+923068687200" class="hover:text-gold-400 transition flex items-center space-x-1">
-                    <i class="fas fa-phone text-gold-500 text-xs"></i> <span>+92 306 8687200</span>
+                <a href="tel:03333044777" class="hover:text-gold-400 transition flex items-center space-x-1">
+                    <i class="fas fa-phone text-gold-500 text-xs"></i> <span>03333044777</span>
                 </a>
                 <span class="hidden md:inline">|</span>
                 <span class="hidden md:flex items-center space-x-1">
@@ -160,7 +160,7 @@
                             </h1>
 
                             <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
-                                Specialized training for ISSB & Initial Preliminary Exams for <strong>Pakistan Army, Pakistan Navy, and Pakistan Air Force</strong>, including Technical Graduate & Lady Cadet Courses.
+                                Specialized training for ISSB & Initial Preliminary Exams for <strong>Pakistan Army, Pakistan Navy, and Pakistan Air Force</strong>, including Technical Graduate courses.
                             </p>
 
                             <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -236,11 +236,10 @@
             <i class="fas fa-star"></i>
         </div>
     			<h3 class="text-xl font-serif font-bold text-white mb-2">Pakistan Army</h3>
-    			<p class="text-xs text-slate-400 leading-relaxed mb-4">Preparation for PMA Long Course, Technical Guaranteed Course (TGC), Direct Short Service Commission (DSSC), and Lady Cadet Course (LCC).</p>
+    			<p class="text-xs text-slate-400 leading-relaxed mb-4">Preparation for PMA Long Course, Technical Graduate Course (TGC), and Direct Short Service Commission (DSSC).</p>
     			<ul class="text-xs text-slate-300 space-y-2 font-medium">
         		<li class="flex items-center"><i class="fas fa-check text-gold-500 mr-2"></i> PMA Long Course Drills</li>
         		<li class="flex items-center"><i class="fas fa-check text-gold-500 mr-2"></i> Technical Graduate Entry</li>
-        		<li class="flex items-center"><i class="fas fa-check text-gold-500 mr-2"></i> Lady Cadet Course (LCC)</li>
     			</ul>
 		</div>
 
@@ -282,11 +281,11 @@
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         <div>
-                            <span class="text-3xl sm:text-4xl font-extrabold font-serif gold-gradient-text">80%+</span>
+                            <span class="text-3xl sm:text-4xl font-extrabold font-serif gold-gradient-text">0%</span>
                             <p class="text-xs font-semibold text-slate-300 uppercase tracking-wider mt-1">ISSB Recommendation Rate</p>
                         </div>
                         <div>
-                            <span class="text-3xl sm:text-4xl font-extrabold font-serif gold-gradient-text">50+</span>
+                            <span class="text-3xl sm:text-4xl font-extrabold font-serif gold-gradient-text">0</span>
                             <p class="text-xs font-semibold text-slate-300 uppercase tracking-wider mt-1">Cadets Trained</p>
                         </div>
                         <div>
@@ -604,7 +603,7 @@
                             <!-- Phone Number -->
                             <div>
                                 <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">WhatsApp / Phone Number *</label>
-                                <input type="tel" id="reg-phone" required pattern="0[0-9]{3}-[0-9]{7}" title="Enter phone in format: 0300-1234567" placeholder="e.g. 0300-1234567" class="w-full bg-navy-950 border border-slate-700 rounded-lg px-4 py-3 text-xs text-white focus:outline-none focus:border-gold-500 transition" oninput="formatPhone(this)">
+                                <input type="tel" id="reg-phone" required pattern="0[0-9]{3}-[0-9]{7}" title="Enter phone in the format 03XX-XXXXXXX" placeholder="e.g. 03XX-XXXXXXX" class="w-full bg-navy-950 border border-slate-700 rounded-lg px-4 py-3 text-xs text-white focus:outline-none focus:border-gold-500 transition" oninput="formatPhone(this)">
                             </div>
 
                             <!-- Email Address -->
@@ -625,7 +624,7 @@
                                 <select id="reg-branch" required class="w-full bg-navy-950 border border-slate-700 rounded-lg px-4 py-3 text-xs text-white focus:outline-none focus:border-gold-500 transition">
                                     <option value="" disabled selected>Select Armed Forces Branch</option>
                                     <option value="Pakistan Army (PMA Long Course)">Pakistan Army (PMA Long Course)</option>
-                                    <option value="Pakistan Army (Technical Graduate / LCC)">Pakistan Army (Technical Graduate / LCC)</option>
+                                    <option value="Pakistan Army (Technical Graduate)">Pakistan Army (Technical Graduate)</option>
                                     <option value="Pakistan Navy (PN Cadet / SSC)">Pakistan Navy (PN Cadet / SSC)</option>
                                     <option value="Pakistan Air Force (GDP / CAE)">Pakistan Air Force (GDP / CAE)</option>
                                 </select>
@@ -698,7 +697,7 @@
                 </div>
                 <div>
                     <span class="text-slate-500 block font-semibold">Contact Phone:</span>
-                    <strong id="slip-phone" class="text-sm text-slate-900">0300-1234567</strong>
+                    <strong id="slip-phone" class="text-sm text-slate-900">—</strong>
                 </div>
                 <div>
                     <span class="text-slate-500 block font-semibold">Email Address:</span>
@@ -760,15 +759,14 @@
                     <li>PMA Long Course & TGC</li>
                     <li>PN Cadet & Direct Short Service</li>
                     <li>PAF GDP & Aeronautical Engg</li>
-                    <li>Lady Cadet Course (LCC)</li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="font-bold text-slate-200 uppercase tracking-wider mb-3 border-b border-slate-800 pb-1">Campus Desk</h4>
                 <p class="mb-2"><i class="fas fa-map-marker-alt text-gold-500 mr-2"></i> Main Campus, Bahawalpur.</p>
-                <p class="mb-2"><i class="fas fa-phone text-gold-500 mr-2"></i> +92 306 8687200</p>
-                <p><i class="fas fa-envelope text-gold-500 mr-2"></i> info@askarihorizon.pk</p>
+                <p class="mb-2"><i class="fas fa-phone text-gold-500 mr-2"></i> 03333044777</p>
+                <p><i class="fas fa-envelope text-gold-500 mr-2"></i> askarihorizonsacademy@gmail.com</p>
             </div>
 
         </div>
