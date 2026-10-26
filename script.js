@@ -115,11 +115,10 @@ function validateRegistrationInput(fieldName, value) {
     return '';
 }
 
-// HANDLE FORM SUBMISSION & GENERATE PRINTABLE SLIP
+// OPEN WHATSAPP WITH A FORMATTED APPLICATION MESSAGE
 function handleRegistration(e) {
     e.preventDefault();
 
-    const form = e.target;
     const fields = {
         name: document.getElementById('reg-name'),
         fname: document.getElementById('reg-fname'),
@@ -135,9 +134,12 @@ function handleRegistration(e) {
     let errorMessage = '';
 
     for (const [key, input] of Object.entries(fields)) {
-        if (!input) continue;
-        const value = input.value || '';
-        const cleaned = value.trim();
+        if (!input) {
+            errorMessage = 'The application form is incomplete. Please refresh the page and try again.';
+            break;
+        }
+
+        const cleaned = input.value.trim();
         data[key] = cleaned;
 
         if (key === 'district' && !cleaned) {
@@ -175,62 +177,19 @@ function handleRegistration(e) {
         return;
     }
 
-    const { name, fname, cnic, phone, email, district, branch, course } = data;
-    const randomID = 'AH-' + new Date().getFullYear() + '-' + Math.floor(1000 + Math.random() * 9000);
+    const message = [
+        'Askari Horizon Academy - Application',
+        '',
+        `1. Candidate's Name: ${data.name}`,
+        `2. Father's Name: ${data.fname}`,
+        `3. CNIC / B-Form Number: ${data.cnic}`,
+        `4. WhatsApp / Phone Number: ${data.phone}`,
+        `5. Email Address: ${data.email}`,
+        `6. Domicile / District: ${data.district}`,
+        `7. Target Service Branch: ${data.branch}`,
+        `8. Selected Preparation Program: ${data.course}`
+    ].join('\n');
 
-    const submission = {
-        randomID,
-        name,
-        fname,
-        cnic,
-        phone,
-        email,
-        district,
-        branch,
-        course,
-        submittedAt: new Date().toISOString()
-    };
-
-    try {
-        const existing = JSON.parse(localStorage.getItem('ah_registrations') || '[]');
-        existing.push(submission);
-        localStorage.setItem('ah_registrations', JSON.stringify(existing));
-    } catch (err) {
-        console.warn('Registration could not be saved locally:', err);
-    }
-
-    const slipFields = {
-        id: document.getElementById('slip-id'),
-        name: document.getElementById('slip-name'),
-        fname: document.getElementById('slip-fname'),
-        cnic: document.getElementById('slip-cnic'),
-        phone: document.getElementById('slip-phone'),
-        email: document.getElementById('slip-email'),
-        district: document.getElementById('slip-district'),
-        branch: document.getElementById('slip-branch'),
-        course: document.getElementById('slip-course')
-    };
-
-    Object.entries(slipFields).forEach(([key, el]) => {
-        if (!el) return;
-        const value = key === 'id' ? randomID : data[key] || '';
-        el.innerText = value;
-    });
-
-    const slipModal = document.getElementById('slip-modal');
-    if (slipModal) {
-        slipModal.classList.remove('hidden');
-    }
-
-    if (form && typeof form.reset === 'function') {
-        form.reset();
-    }
-}
-
-// CLOSE MODAL
-function closeModal() {
-    const modal = document.getElementById('slip-modal');
-    if (modal) {
-        modal.classList.add('hidden');
-    }
+    const whatsappUrl = `https://wa.me/923333044777?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 }

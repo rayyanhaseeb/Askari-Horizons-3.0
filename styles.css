@@ -21,22 +21,3 @@
             background-position: center;
             background-repeat: no-repeat;
         }
-        @media print {
-            body * {
-                visibility: hidden;
-            }
-            #printable-slip, #printable-slip * {
-                visibility: visible;
-            }
-            #printable-slip {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                color: black !important;
-                background: white !important;
-            }
-            .no-print {
-                display: none !important;
-            }
-        }
