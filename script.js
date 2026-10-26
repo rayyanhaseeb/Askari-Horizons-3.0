@@ -16,6 +16,11 @@
                     this.value = val;
                 });
             }
+
+            const registrationForm = document.getElementById('registration-form');
+            if (registrationForm) {
+                registrationForm.addEventListener('submit', handleRegistration);
+            }
         });
 
         // AUTO-FORMAT PHONE: enforces XXXX-XXXXXXX as user types
@@ -190,6 +195,6 @@ function handleRegistration(e) {
         `8. Selected Preparation Program: ${data.course}`
     ].join('\n');
 
-    const whatsappUrl = `https://wa.me/923333044777?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    const whatsappUrl = `https://wa.me/923330262667?text=${encodeURIComponent(message)}`;
+    window.location.assign(whatsappUrl);
 }
