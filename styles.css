@@ -1,0 +1,42 @@
+﻿/* ============================================================
+   Askari Horizon Officers Academy — Custom Styles
+   File: styles.css
+   Description: All custom CSS for the Askari Horizon portal.
+                Tailwind utility classes are applied inline in HTML.
+   ============================================================ */
+.gold-gradient-text {
+            background: linear-gradient(135deg, #FFF099 0%, #D4AF37 50%, #997A15 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .military-card {
+            background: linear-gradient(180deg, rgba(15, 28, 48, 0.9) 0%, rgba(7, 17, 32, 0.95) 100%);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-image-bg {
+            background-image: linear-gradient(rgba(4, 10, 20, 0.70), rgba(4, 10, 20, 0.78)), url('img-2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #printable-slip, #printable-slip * {
+                visibility: visible;
+            }
+            #printable-slip {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                color: black !important;
+                background: white !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }

@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Askari Academy website (Node)",
+			"type": "shell",
+			"command": "node",
+			"args": [".vscode/serve.js"],
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}
