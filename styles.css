@@ -23,8 +23,8 @@
         }
 
         .closing-image-bg {
-            min-height: 9.5rem;
-            background-image: linear-gradient(rgba(4, 10, 20, 0.70), rgba(4, 10, 20, 0.78)), url('img-1.jpg');
+            aspect-ratio: 734 / 259;
+            background-image: linear-gradient(rgba(4, 10, 20, 0.70), rgba(4, 10, 20, 0.78)), url('img-3.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -59,10 +59,4 @@
         .campus-map-link {
             position: absolute;
             inset: 0;
-        }
-
-        @media (min-width: 640px) {
-            .closing-image-bg {
-                min-height: 9.75rem;
-            }
         }
