@@ -21,3 +21,48 @@
             background-position: center;
             background-repeat: no-repeat;
         }
+
+        .closing-image-bg {
+            min-height: 9.5rem;
+            background-image: linear-gradient(rgba(4, 10, 20, 0.70), rgba(4, 10, 20, 0.78)), url('img-1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 1rem;
+        }
+
+        .campus-map-tile {
+            position: relative;
+            width: 7.5rem;
+            aspect-ratio: 1;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.8);
+            border-radius: 0.25rem;
+        }
+
+        .campus-map-section {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .campus-map-tile iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            pointer-events: none;
+        }
+
+        .campus-map-link {
+            position: absolute;
+            inset: 0;
+        }
+
+        @media (min-width: 640px) {
+            .closing-image-bg {
+                min-height: 9.75rem;
+            }
+        }

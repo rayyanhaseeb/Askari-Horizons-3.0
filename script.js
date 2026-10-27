@@ -195,6 +195,6 @@ function handleRegistration(e) {
         `8. Selected Preparation Program: ${data.course}`
     ].join('\n');
 
-    const whatsappUrl = `https://wa.me/923333044777?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/923068687200?text=${encodeURIComponent(message)}`;
     window.location.assign(whatsappUrl);
 }
