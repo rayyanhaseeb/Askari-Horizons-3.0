@@ -5,18 +5,18 @@
                 Tailwind utility classes are applied inline in HTML.
    ============================================================ */
 .gold-gradient-text {
-            background: linear-gradient(135deg, #FFF099 0%, #D4AF37 50%, #997A15 100%);
+            background: linear-gradient(135deg, #FFF099 0%, #C5A059 50%, #8A6924 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .military-card {
-            background: linear-gradient(180deg, rgba(15, 28, 48, 0.9) 0%, rgba(7, 17, 32, 0.95) 100%);
+            background: linear-gradient(180deg, rgba(21, 36, 16, 0.92) 0%, rgba(13, 23, 10, 0.97) 100%);
             backdrop-filter: blur(10px);
         }
 
         .hero-image-bg {
-            background-image: linear-gradient(rgba(4, 10, 20, 0.70), rgba(4, 10, 20, 0.78)), url('img-2.jpg');
+            background-image: linear-gradient(rgba(13, 23, 10, 0.70), rgba(13, 23, 10, 0.78)), url('img-2.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -24,7 +24,7 @@
 
         .closing-image-bg {
             aspect-ratio: 734 / 259;
-            background-image: linear-gradient(rgba(4, 10, 20, 0.70), rgba(4, 10, 20, 0.78)), url('img-3.jpg');
+            background-image: linear-gradient(rgba(13, 23, 10, 0.70), rgba(13, 23, 10, 0.78)), url('img-3.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -39,7 +39,7 @@
             width: 7.5rem;
             aspect-ratio: 1;
             overflow: hidden;
-            border: 1px solid rgba(212, 175, 55, 0.8);
+            border: 1px solid rgba(197, 160, 89, 0.8);
             border-radius: 0.25rem;
         }
 
@@ -48,12 +48,11 @@
             justify-content: flex-start;
         }
 
-        .campus-map-tile iframe {
+        .campus-map-image {
             display: block;
             width: 100%;
             height: 100%;
-            border: 0;
-            pointer-events: none;
+            object-fit: cover;
         }
 
         .campus-map-link {
