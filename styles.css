@@ -4,6 +4,17 @@
    Description: All custom CSS for the Askari Horizon portal.
                 Tailwind utility classes are applied inline in HTML.
    ============================================================ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.125em;
+        }
+
 .gold-gradient-text {
             background: linear-gradient(135deg, #FFF099 0%, #C5A059 50%, #8A6924 100%);
             -webkit-background-clip: text;
@@ -16,7 +27,7 @@
         }
 
         .hero-image-bg {
-            background-image: linear-gradient(rgba(13, 23, 10, 0.70), rgba(13, 23, 10, 0.78)), url('img-2.jpg');
+            background-image: linear-gradient(rgba(13, 23, 10, 0.70), rgba(13, 23, 10, 0.78)), url('img-2.webp');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -24,7 +35,7 @@
 
         .closing-image-bg {
             aspect-ratio: 734 / 259;
-            background-image: linear-gradient(rgba(13, 23, 10, 0.70), rgba(13, 23, 10, 0.78)), url('img-3.jpg');
+            background-image: linear-gradient(rgba(13, 23, 10, 0.70), rgba(13, 23, 10, 0.78)), url('img-3.webp');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
