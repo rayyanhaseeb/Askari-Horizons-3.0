@@ -27,7 +27,7 @@
         }
 
         .hero-image-bg {
-            background-image: linear-gradient(rgba(13, 23, 10, 0.70), rgba(13, 23, 10, 0.78)), url('img-2.webp');
+            background-image: linear-gradient(rgba(13, 23, 10, 0.70), rgba(13, 23, 10, 0.78)), url('./img-2.webp');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 
         .closing-image-bg {
             aspect-ratio: 734 / 259;
-            background-image: linear-gradient(rgba(13, 23, 10, 0.70), rgba(13, 23, 10, 0.78)), url('img-3.webp');
+            background-image: linear-gradient(rgba(13, 23, 10, 0.70), rgba(13, 23, 10, 0.78)), url('./img-3.webp');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
