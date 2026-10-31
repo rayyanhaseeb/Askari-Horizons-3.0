@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "npm run build:css && npm run build:icons",
+    "build": "npm run build:css && npm run build:icons && node scripts/build-site.mjs",
     "build:css": "tailwindcss -c tailwind.config.cjs -i styles.css -o site.css --minify",
     "build:icons": "node scripts/build-icons.mjs"
   },
